@@ -52,9 +52,17 @@ public class quest2 {
 
 
         Review[] badFruit = {r1, r2, r3, r4, r5};
-        Arrays.sort(badFruit);
+        System.out.println("\n");
+
         for (int i = 0; i < badFruit.length; i++) {
-            System.out.println(badFruit[i]);
+            System.out.println(badFruit[i]);}
+
+        Arrays.sort(badFruit);
+        System.out.println("\n");
+
+
+        for (int j = 0; j < badFruit.length; j++) {
+            System.out.println(badFruit[j]);
         }
 
 
