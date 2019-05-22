@@ -1,4 +1,8 @@
-class Review {
+//class Review {
+//we must change the class declaration to indicate that we have fulfulled the requirements of implementing the  Comparable interface:
+
+
+class Review implements Comparable<Review> {
     /**
      * A review, for example of a book or movie.
      */
@@ -46,7 +50,7 @@ class Review {
 
     /**
      * Compares this object with the specified object for order.
-     * <p>
+     *
      * Returns a negative integer, zero, or a positive integer as this
      * object is less than, equal to, or greater than the specified object.
      *
@@ -54,7 +58,7 @@ class Review {
      * @return a negative integer, zero, or a positive integer as this
      * object is less than, equal to, or greater than the specified object.
      */
-    //@Override
+
     public int compareTo(Review other) {
         if (this.rating < other.rating) {
             return -1;
@@ -64,6 +68,8 @@ class Review {
             return 0;
         }
     }
+
+
 
 
 
