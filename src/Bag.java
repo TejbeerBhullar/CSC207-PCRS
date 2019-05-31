@@ -58,6 +58,11 @@ class Bag{
 
     public void enhance(){}
 
+    protected void update(int extraCapacity) {
+        int newCapacity = contents.length + extraCapacity;
+        contents = new String[newCapacity];
+    }
+
     public static void print(String[] name){
         String ret = "{";
         for(int i=0; i<name.length ; i++){
@@ -77,6 +82,8 @@ class Bag{
     System.out.println(b1.numberOfContents);
     print(b1.contents);
     b1.popItem();
+    print(b1.contents);
+    b1.update(3);
     print(b1.contents);
 
     }
