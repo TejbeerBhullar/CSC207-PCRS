@@ -1,10 +1,9 @@
-//class Review {
 //we must change the class declaration to indicate that we have fulfulled the requirements of implementing the  Comparable interface:
 
 
 class Review implements Comparable<Review> {
     /**
-     * A review, for example of a book or movie.
+     * src.A review, for example of a book or movie.
      */
 
 

@@ -53,9 +53,9 @@ public class Arrays {
 
 
 
-// If we have a class called Monster, we can put Monster objects in too --
+// If we have a class called src.Monster, we can put src.Monster objects in too --
 // no problem!
-    // miscellany[2] = new Monster("Fred");
+    // miscellany[2] = new src.Monster("Fred");
 
 
 

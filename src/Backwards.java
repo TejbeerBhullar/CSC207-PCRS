@@ -7,12 +7,12 @@ public class Backwards {
         B = new int [100]; // Array of length 100
     }
 
-    //hidden code fills A
+    //hidden code fills src.A
 
     /**
-     * Copies positive elements of A to B, but in reverse order, stopping upon encountering a negative element.
+     * Copies positive elements of src.A to B, but in reverse order, stopping upon encountering a negative element.
      */
-    // Copy the positive elements of A to B, but in reverse order, stopping upon encountering a negative element.
+    // Copy the positive elements of src.A to B, but in reverse order, stopping upon encountering a negative element.
 
     public void backwardsCopy() {
       int i = A.length -1;

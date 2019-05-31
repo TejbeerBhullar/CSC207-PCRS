@@ -1,5 +1,5 @@
 /**
- * A very silly program to demonstrate the basics of defining your own classes.
+ * src.A very silly program to demonstrate the basics of defining your own classes.
  */
 
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class Monster {
     /**
-     * A monster.
+     * src.A monster.
      */
 
 
@@ -36,7 +36,7 @@ public class Monster {
        variable.  This is useful, for example, if we want the instances to
        accumulate a value together.  Below, we define a class variable called
        "population", that will be incremented by one every time a constructor
-       is called to create a new Monster.  If this were not a class variable,
+       is called to create a new src.Monster.  If this were not a class variable,
        every instance would have its own "population", each with the the
        value 1 -- not very useful!
 
@@ -63,13 +63,13 @@ public class Monster {
 
 
 
-    // The size of this Monster.
+    // The size of this src.Monster.
     private int size;
-    // The name of this Monster.
+    // The name of this src.Monster.
     private String name;
-    // The contents of this Monster's belly.
+    // The contents of this src.Monster's belly.
     private Monster[] belly;
-    // The number of items in this Monster's belly.
+    // The number of items in this src.Monster's belly.
     private int fullness;
 
 
@@ -101,7 +101,7 @@ public class Monster {
 
        For example, consider the "eat" method below.  Suppose our
        representation invariants said that the belly array must be sorted
-       according to Monster size.  On the one hand, the eat method would
+       according to src.Monster size.  On the one hand, the eat method would
        have to make sure that the belly array is sorted by the end of the
        method.  But on the other hand, it would be able to assume the array
        was sorted at the beginning.  This means that the method wouldn't
@@ -115,7 +115,7 @@ public class Monster {
     // All monsters in this monster's belly are at the front of the array:
     //    for 0 <= i < fullness, belly[i] is not null
     //    for fullness <= i < belly.len, belly[i] is null
-    // A monster can only have in its belly other monsters that themselves
+    // src.A monster can only have in its belly other monsters that themselves
     // have empty bellies:
     //    for 0 <= i < fullness, belly[i].fullness == 0
 
@@ -126,17 +126,17 @@ public class Monster {
 
 
     /* Constructors
-       A constructor has the same name as the class and no return type
+       src.A constructor has the same name as the class and no return type
        (not even void).  It is called automatically when an instance of the
        class is created, that is, when "new" is used.
 
 
 
-       A class can have multiple constructors, as long as their signatures are
+       src.A class can have multiple constructors, as long as their signatures are
        different.  This is useful when we want client code to be able to
        construct instances in different ways, providing different sorts or
        amounts of initial information.  For example, here we offer two ways
-       to construct a Monster: client code can either provide the Monster's
+       to construct a src.Monster: client code can either provide the src.Monster's
        name, size, and bellyCapacity, or not provide any of them, in which
        case, defaults will be used.  Java knows which constructor we are calling
        by the number and type of the arguments we provide.
@@ -145,11 +145,11 @@ public class Monster {
 
 
     /**
-     * Creates a new Monster.
+     * Creates a new src.Monster.
      *
-     * @param name          the name of this Monster.
-     * @param size          the size of this Monster.
-     * @param bellyCapacity the number of Monsters this Monster can hold in its
+     * @param name          the name of this src.Monster.
+     * @param size          the size of this src.Monster.
+     * @param bellyCapacity the number of Monsters this src.Monster can hold in its
      *                      belly.
      */
     public Monster(String name, int size, int bellyCapacity) {
@@ -187,7 +187,7 @@ public class Monster {
 
 
     /**
-     * Creates a new Monster with a default name, size, and belly capacity.
+     * Creates a new src.Monster with a default name, size, and belly capacity.
      */
     public Monster() {
 
@@ -201,8 +201,8 @@ public class Monster {
            population just as in the other constructor, but with default values.
            We could do that like so:
                  this.size = 10;
-                 this.name = "Monster" + String.valueOf(population);
-                 this.belly = new Monster[3];
+                 this.name = "src.Monster" + String.valueOf(population);
+                 this.belly = new src.Monster[3];
                  this.fullness = 0;
                  this.population += 1;
            But the other constructor already knows how to do all of this,
@@ -222,7 +222,7 @@ public class Monster {
 
 
 
-        this("Monster" + String.valueOf(population), 10, 3);
+        this("src.Monster" + String.valueOf(population), 10, 3);
     }
 
 
@@ -245,7 +245,7 @@ public class Monster {
        then a use of "new" with no arguments will fail to compile.  In our code,
        since we have a constructor with arguments, if we didn't also provide
        a no-arg constructor, then this line would not compile:
-           Monster m4 = new Monster();
+           src.Monster m4 = new src.Monster();
     */
 
 
@@ -258,7 +258,7 @@ public class Monster {
 
 
 
-       A method must have a return type declared.  (The "size" method below
+       src.A method must have a return type declared.  (The "size" method below
        returns an int.)  If nothing is returned, we specify "void" instead of
        giving a type.
 
@@ -277,9 +277,9 @@ public class Monster {
 
 
     /**
-     * Reports the size of this Monster.
+     * Reports the size of this src.Monster.
      *
-     * @return the size of this Monster.
+     * @return the size of this src.Monster.
      */
     public int size() {
         return this.size;
@@ -316,9 +316,9 @@ public class Monster {
 
 
     /**
-     * Grows this Monster.
+     * Grows this src.Monster.
      *
-     * @param factor The factor by which this Monster is to grow.
+     * @param factor The factor by which this src.Monster is to grow.
      */
     public void grow(int factor) {
         this.size = this.size * factor;
@@ -327,7 +327,7 @@ public class Monster {
 
 
     /**
-     * Grows this Monster by a default factor.
+     * Grows this src.Monster by a default factor.
      */
     public void grow() {
         /*
@@ -344,11 +344,11 @@ public class Monster {
 
 
     /**
-     * Puts Monster m in this Monster's belly, as long as this Monster's belly
+     * Puts src.Monster m in this src.Monster's belly, as long as this src.Monster's belly
      * has room and m's belly is empty.
      *
-     * @param m the Monster to be eaten.
-     * @return true iff this Monster successfully ate m.
+     * @param m the src.Monster to be eaten.
+     * @return true iff this src.Monster successfully ate m.
      */
     public boolean eat(Monster m) {
         if (this.fullness < this.belly.length - 1 && m.fullness == 0) {
@@ -363,12 +363,12 @@ public class Monster {
 
 
     /**
-     * Digests the contents of this Monster's belly.  Its belly becomes
-     * empty, and the Monster burps.
+     * Digests the contents of this src.Monster's belly.  Its belly becomes
+     * empty, and the src.Monster burps.
      *
      * @return a "burp" String, with the number of u letters equal to the
-     * number of Monsters in this Monster's belly at the time of
-     * digesting, or "cough" if the Monster's belly is already empty.
+     * number of Monsters in this src.Monster's belly at the time of
+     * digesting, or "cough" if the src.Monster's belly is already empty.
      */
     public String digest() {
         if (this.fullness == 0) {
@@ -395,7 +395,7 @@ public class Monster {
        Sometimes we have methods that we don't want to make part of the API.
        For instance, method "burp" is just a helper for method "digest".
        We can prevent client code from calling it directly be declaring it
-       to be "private".  A private method can only be called by other methods
+       to be "private".  src.A private method can only be called by other methods
        in the same class.  Even subclasses of this class would not be able
        to access it.
 
@@ -480,7 +480,7 @@ public class Monster {
 
 
 
-       Our Monster class inherits a toString method from class Object.
+       Our src.Monster class inherits a toString method from class Object.
        When we define our own toString, we are overriding the inheritted
        one.  The @Override annotation tells the reader, and Java, that
        this is what we intend to be doing.
@@ -497,7 +497,7 @@ public class Monster {
 
 
     /**
-     * Returns a string representation of the object, including this Monster's
+     * Returns a string representation of the object, including this src.Monster's
      * name, size, and the contents of its belly.
      *
      * @return a string representation of the object.
@@ -507,7 +507,7 @@ public class Monster {
         StringBuilder answer = new StringBuilder(this.name);
         answer.append(" of size " + String.valueOf(this.size) + ": [");
         for (int i = 0; i < this.fullness; i++) {
-            // Below, this.belly[i] is an instance of Monster.  Appending
+            // Below, this.belly[i] is an instance of src.Monster.  Appending
             // it to our StringBuilder causes its toString method to be
             // called.  So this is a second way to call toString implicitely.
             answer.append(" " + this.belly[i]);
@@ -587,11 +587,11 @@ public class Monster {
 
 
     /**
-     * Returns true iff this Monster is equivalent to obj, meaning that
+     * Returns true iff this src.Monster is equivalent to obj, meaning that
      * they have the same name and size, and equivalent belly contents.
      *
      * @param obj the Object to be compared to.
-     * @return true iff this Monster is equivalent to obj.
+     * @return true iff this src.Monster is equivalent to obj.
      */
     @Override
     public boolean equals(Object obj) {
@@ -607,9 +607,9 @@ public class Monster {
         // certainly aren't equivalent.
         if (getClass() != obj.getClass())
             return false;
-        // We are comparing two Monster objects.  We must cast obj from its
-        // declared type (Object) to Monster so that Java will know it has
-        // Monster-specific attributes, like belly.
+        // We are comparing two src.Monster objects.  We must cast obj from its
+        // declared type (Object) to src.Monster so that Java will know it has
+        // src.Monster-specific attributes, like belly.
         Monster other = (Monster) obj;
         // Now we can check the attributes for equivalence.
         // We can't check name equality until we are sure we are comparing
@@ -623,7 +623,7 @@ public class Monster {
         } else if (this.size != other.size) {
             return false;
         } else if (!Arrays.equals(this.belly, other.belly)) {
-            // Arrays.equals is true iff the two arrays have the same length,
+            // src.Arrays.equals is true iff the two arrays have the same length,
             // and each pair of their elements at corresponding positions
             // are equals.
             return false;
@@ -646,7 +646,7 @@ public class Monster {
        Since a class method is associated with the class not the instances,
        when we call it, we prefix it with the class name.  For example,
        we can say:
-              System.out.println("Monster population: " + Monster.population());
+              System.out.println("src.Monster population: " + src.Monster.population());
 
 
 
@@ -656,15 +656,15 @@ public class Monster {
        variable.  In fact our no-arg constructor does so.  But if "population"
        were an instance method, we would have to use an instance to access
        the method.  For example, we could do this:
-              m1 = new Monster("Grok", 21, 3);
-              System.out.println("Monster population: " + m1.population());
+              m1 = new src.Monster("Grok", 21, 3);
+              System.out.println("src.Monster population: " + m1.population());
        This would certainly work, but it feels a bit odd to talk about
        "m1.population()".
 
 
 
        Although an instance method can reference a class variable (or call
-       a class method), the opposite is not true.  A class method cannot
+       a class method), the opposite is not true.  src.A class method cannot
        access an instance variable or call an instance method directly.
        So in class method "population", the following won't compile:
                return size;
@@ -691,8 +691,8 @@ public class Monster {
 
 
         Because population was declared "static", there is only one,
-        shared by all instances of Monster.  It is not stored in every
-        instance of Monster.  So it would not make sense to say:
+        shared by all instances of src.Monster.  It is not stored in every
+        instance of src.Monster.  So it would not make sense to say:
               return this.population;
         and in fact, that line would not compile.  We can access the
         variable through the class name, as below.  If we omit the
@@ -726,7 +726,7 @@ public class Monster {
         System.out.println(m0.eat(m4));
         System.out.println(m2.eat(m3));
         System.out.println(m0.eat(m2));  // Disallowed, since m2 isn't empty.
-        System.out.println("Monster population: " + Monster.population());
+        System.out.println("src.Monster population: " + Monster.population());
         for (int i = 0; i < scarey.length; i++) {
             System.out.println(scarey[i]);
         }

@@ -1,4 +1,4 @@
-/* Create a Car class.
+/* Create a src.Car class.
 It should have for instance variables:
 
 a private String named brandName
