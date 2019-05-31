@@ -10,4 +10,10 @@ public class HandBag extends Bag{
     public HandBag(String color, int capacity){
         super(color, capacity);
     }
+
+    @Override
+    public void enhance() {
+        super.enhance();
+        this.contents = new String[contents.length + 1];
+    }
 }
