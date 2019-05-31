@@ -1,9 +1,10 @@
+//class Review {
 //we must change the class declaration to indicate that we have fulfulled the requirements of implementing the  Comparable interface:
 
 
 class Review implements Comparable<Review> {
     /**
-     * src.A review, for example of a book or movie.
+     * A review, for example of a book or movie.
      */
 
 
@@ -40,6 +41,9 @@ class Review implements Comparable<Review> {
     public void like() {
         this.likes += 1;
     }
+
+    public int getLikes(){return this.likes;}
+    public String getText(){return this.text;}
 
 
     //To make instances of this class comparable, need to do two things.

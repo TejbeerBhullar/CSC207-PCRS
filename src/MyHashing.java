@@ -1,3 +1,4 @@
+//Add two constructors: an empty constructor, and a constructor that takes one int and initializes the seed instance variable.
 //
 //        Add a method called hash so that
 //        1) if it takes String as an argument, it returns the sum of the ASCII values of the characters in the String.

@@ -1,8 +1,9 @@
+
 /*
-Define a class src.ImmutablePen with:
+Define a class ImmutablePen with:
 
     one private instance variable: color of pen (String)
-    a constructor that has one parameter that represents this src.ImmutablePen's color (String)
+    a constructor that has one parameter that represents this ImmutablePen's color (String)
     getColor(): a getter for the instance variable
 */
 

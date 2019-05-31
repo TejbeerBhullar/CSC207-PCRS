@@ -103,7 +103,7 @@ class ControlStructures {
 
 
 
-        // ----- While src.loops
+        // ----- While loops
 
 
 
@@ -135,7 +135,7 @@ class ControlStructures {
 
 
 
-        // ----- For src.loops
+        // ----- For loops
 
 
 
@@ -226,7 +226,7 @@ class ControlStructures {
 
 
 
-        // ----- Enhanced for-src.loops
+        // ----- Enhanced for-loops
 
 
 
@@ -242,7 +242,7 @@ class ControlStructures {
         }
         // This loop is much simpler, and therefore less error prone, than
         // the one above that uses a regular for-loop.  You should use
-        // enhanced for-src.loops whenever possible.
+        // enhanced for-loops whenever possible.
 
 
 
