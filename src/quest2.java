@@ -1,6 +1,5 @@
 import java.time.MonthDay;
-import java.util.Comparator;
-import java.util.Arrays ;
+import java.util.Arrays;
 
 public class quest2 {
 

@@ -6,7 +6,6 @@
 import java.util.Arrays;
 
 
-
 public class Monster {
     /**
      * A monster.

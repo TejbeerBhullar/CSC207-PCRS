@@ -42,6 +42,9 @@ class Review implements Comparable<Review> {
         this.likes += 1;
     }
 
+    public int getLikes(){return this.likes;}
+    public String getText(){return this.text;}
+
 
     //To make instances of this class comparable, need to do two things.
     // First, we must implement the compareTo method. It's up to us to decide how reviews should compare.

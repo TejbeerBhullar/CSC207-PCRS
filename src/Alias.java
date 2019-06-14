@@ -31,20 +31,12 @@
 //        System.out.println(int1 + " " + pen1.getColor());
 //    }
 //}
-
-
-
 class A {
-    static int func1(int i) {
-        return i;
+    void func(double d) {
+        System.out.println(d);
     }
 
-    static Integer func2(Integer i) {
-        return i;
-    }
-
-    static Integer func3(Integer i) {
-        return new Integer(i);
+    void func1(double d2) {
+        System.out.println(d2);
     }
 }
-

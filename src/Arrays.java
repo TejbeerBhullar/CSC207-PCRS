@@ -1,6 +1,18 @@
 public class Arrays {
 
-  public static void main(Arrays[] arrays){
+  // print method
+  public static void print(String[] name){
+    String ret = "{";
+    for(int i=0; i<name.length ; i++){
+      ret += " "+name[i] +",";
+    }
+    ret = ret.substring(0,ret.length()-1);
+    ret += " }";
+    System.out.println(ret);
+  }
+
+
+  public static void main(String[] arr){
 
   int[][] table;
 // The type of table is int[][] ("int array array", or "array of int arrays").
@@ -13,7 +25,7 @@ public class Arrays {
 // This is legal:
   table[49][2] = 123;
 // This is not:
-    table[2][49] = 123;
+   // table[2][49] = 123;
 
       table = new int[50][];
 // Now we have an array of 50 elements, each of which can refer to
@@ -75,6 +87,12 @@ public class Arrays {
       dee[0][1] = 1;
       dee[0][2] = 2;
 
+      int num = 8;
+      String[] starry = new String[num];
+      print(starry);
+      String hel = "Hello";
+      starry[num-1] = hel;
+      print(starry);
   }
 
 
