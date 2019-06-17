@@ -25,4 +25,8 @@ public class CrossbodyBag extends Bag{
         return numberOfStraps;
     }
 
+    @Override
+    public void enhance() {
+        contents = new String[contents.length + 2];
+    }
 }

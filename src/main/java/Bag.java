@@ -16,6 +16,7 @@ class Bag{
     private int numberOfContents = 0;
      String[] contents ;//= new String[capacity];
 
+
     public Bag(String color, int capacity){
         this.color = color;
         this.capacity = capacity;

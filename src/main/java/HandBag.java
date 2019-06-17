@@ -13,7 +13,6 @@ public class HandBag extends Bag{
 
     @Override
     public void enhance() {
-        super.enhance();
-        this.contents = new String[contents.length + 1];
+        contents = new String[contents.length + 1];
     }
 }

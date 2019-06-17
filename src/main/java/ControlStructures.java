@@ -50,13 +50,13 @@ class ControlStructures {
         // If the body of the if has just a single line, the curly braces
         // around the if-block are optional.
         // For instance, this would work just fine:
-        if (classSize > 500)
-            System.out.println("Wow, that's big!");
+        if (classSize > 500){
+            System.out.println("Wow, that's big!");}
         // But this code is vulnerable!  If we add more code, we may indent
         // it nicely and fool ourselves into thinking
         // it's inside the if-block:
-        if (classSize > 500)
-            System.out.println("Wow, that's big!");
+        if (classSize > 500){
+            System.out.println("Wow, that's big!");}
         sections = 3;
         classSize = classSize / 3;
         // But to Java, these extra lines are OUTSIDE the if-block.  They

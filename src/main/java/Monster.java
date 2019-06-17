@@ -598,14 +598,14 @@ public class Monster {
         // we more than equivalence, we have identity equality.
         // That is, we are comparing the very same object to itself.
         if (this == obj)
-            return true;
+        {return true;}
         // This check avoids null references later on.
-        if (obj == null)
-            return false;
+        if (obj == null){
+            return false;}
         // If the two objects aren't even instances of the same class, they
         // certainly aren't equivalent.
-        if (getClass() != obj.getClass())
-            return false;
+        if (getClass() != obj.getClass()){
+            return false;}
         // We are comparing two Monster objects.  We must cast obj from its
         // declared type (Object) to Monster so that Java will know it has
         // Monster-specific attributes, like belly.
