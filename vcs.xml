@@ -18,6 +18,10 @@
           <option name="url" value="https://markus.teach.cs.toronto.edu/git/csc207-2019-05/bhulla56" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://markus.teach.cs.toronto.edu/git/csc207-2019-05/group_0141" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/IdeaProjects" />
