@@ -2,6 +2,8 @@
   <component name="FindSettings">
     <option name="customScope" value="File '.../src/CrossbodyBag.java [CSC207-PCRS]'" />
     <option name="defaultScopeName" value="File '.../src/CrossbodyBag.java [CSC207-PCRS]'" />
+    <option name="localCaseSensitive" value="true" />
+    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="File '.../src/CrossbodyBag.java [CSC207-PCRS]'" />
   </component>
 </application>
