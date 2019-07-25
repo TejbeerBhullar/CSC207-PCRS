@@ -1,9 +1,9 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Module 'Phase 1'" />
-    <option name="defaultScopeName" value="Module 'Phase 1'" />
+    <option name="customScope" value="Module 'Strategy Patterns'" />
+    <option name="defaultScopeName" value="Module 'Strategy Patterns'" />
     <option name="localCaseSensitive" value="true" />
     <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="true" />
-    <option name="SEARCH_SCOPE" value="Module 'Phase 1'" />
+    <option name="SEARCH_SCOPE" value="Module 'Strategy Patterns'" />
   </component>
 </application>
